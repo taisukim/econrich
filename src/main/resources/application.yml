@@ -1,0 +1,33 @@
+spring:
+  config:
+    activate:
+      on-profile: econrich
+
+  datasource:
+    url: jdbc:mariadb://localhost:3306/hr?characterEncoding=UTF-8&serverTimezone=UTC
+    username: rich
+    password: rich13
+    driver-class-name: org.mariadb.jdbc.Driver
+
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    generate-ddl: true
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        dialect: org.hibernate.dialect.MariaDB103Dialect
+        default_batch_fetch_size: 1000
+    # ?? true ? ??? data.sql ??? ??? ??.
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+      platform: mariadb
+#      schema-locations: classpath:schema.sql
+#      data-locations: classpath:data.sql
+
+server:
+  port: 8080
