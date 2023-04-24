@@ -10,7 +10,7 @@ public class WebClientConfig {
     @Bean
     public WebClient webClient() {
         return WebClient.builder()
-                .baseUrl("https://business.juso.go.kr/addrlink/addrLinkApi.do")
+                .baseUrl("https://business.juso.go.kr")
                 .build();
     }
 }
