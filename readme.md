@@ -5,6 +5,7 @@
 - DB : mariaDB 10.5 (docker)
 - JPA 
 - WebClient
+- server : AWS EC2
  
  
  
@@ -49,6 +50,7 @@
 
 ### 6. 특정 부서의 급여 특정 비율로 인상
 
+- explain : job 테이블에 최대급여가 있어서 특정 부서의 급여가 올라갈때 자동으로 해당 직책의 최대급여보다 높으면 최대급여도 같이 수정되도록 설정해두었습니다.
 - method : put 
 - url : 34.195.166.85:8080/api/department/salary/{departmentId}
 - ex : 34.195.166.85:8080/api/department/salary/20
@@ -64,7 +66,7 @@
 
 ### 7. 주소기반 산업지원서비스 API 호출
 
-- info : 도로면 주소 검색 api
+- info : 도로명 주소 검색 api
 - method : get
 - url : 34.195.166.85:8080/api/juso/{검색할 주소명}
 - ex : 34.195.166.85:8080/api/juso/냉천로
