@@ -12,7 +12,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: create-drop
     generate-ddl: true
     properties:
       hibernate:
@@ -28,6 +28,9 @@ spring:
       platform: mariadb
 #      schema-locations: classpath:schema.sql
 #      data-locations: classpath:data.sql
+
+juso:
+  apikey: devU01TX0FVVEgyMDIzMDQxMzE0NDk1ODExMzY4MzM=
 
 server:
   port: 8080

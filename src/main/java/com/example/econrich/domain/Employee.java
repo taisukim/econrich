@@ -29,8 +29,11 @@ public class Employee {
     private String phoneNumber;
     @Column(nullable = false)
     private LocalDateTime hireDate;
-    @Column(length = 20, nullable = false)
-    private String jobId;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "job_id", referencedColumnName = "job_id", nullable = false)
+    private Job job;
+
     @Column(precision = 8, scale = 2, nullable = false)
     private BigDecimal salary;
     @Column(precision = 2, scale = 2)
@@ -44,4 +47,8 @@ public class Employee {
     @JoinColumn(name = "department_id", referencedColumnName = "department_id")
     private Department department;
 
+
+    protected void setSalary(BigDecimal salary) {
+        this.salary = salary;
+    }
 }

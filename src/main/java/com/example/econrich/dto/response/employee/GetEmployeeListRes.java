@@ -23,7 +23,7 @@ public class GetEmployeeListRes {
         this.lastName = employee.getLastName();
         this.email = employee.getEmail();
         this.managerId = employee.getManager().getId();
-        this.jobId = employee.getJobId();
+        this.jobId = employee.getJob().getId();
         this.salary = employee.getSalary();
         this.phoneNumber = employee.getPhoneNumber().replace("\\.", "-");
     }

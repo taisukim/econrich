@@ -435,7 +435,7 @@ COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 0;
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            10,
            'Administration',
@@ -443,7 +443,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            20,
            'Marketing',
@@ -451,7 +451,7 @@ VALUES (
            1800
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            30,
            'Purchasing',
@@ -459,7 +459,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            40,
            'Human Resources',
@@ -467,7 +467,7 @@ VALUES (
            2400
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            50,
            'Shipping',
@@ -475,7 +475,7 @@ VALUES (
            1500
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            60,
            'IT',
@@ -483,7 +483,7 @@ VALUES (
            1400
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            70,
            'Public Relations',
@@ -491,7 +491,7 @@ VALUES (
            2700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            80,
            'Sales',
@@ -499,7 +499,7 @@ VALUES (
            2500
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            90,
            'Executive',
@@ -507,7 +507,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            100,
            'Finance',
@@ -515,7 +515,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            110,
            'Accounting',
@@ -523,7 +523,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            120,
            'Treasury',
@@ -531,7 +531,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            130,
            'Corporate Tax',
@@ -539,7 +539,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            140,
            'Control And Credit',
@@ -547,7 +547,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            150,
            'Shareholder Services',
@@ -555,7 +555,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            160,
            'Benefits',
@@ -563,7 +563,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            170,
            'Manufacturing',
@@ -571,7 +571,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            180,
            'Construction',
@@ -579,7 +579,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            190,
            'Contracting',
@@ -587,7 +587,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            200,
            'Operations',
@@ -595,7 +595,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            210,
            'IT Support',
@@ -603,7 +603,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            220,
            'NOC',
@@ -611,7 +611,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            230,
            'IT Helpdesk',
@@ -619,7 +619,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            240,
            'Government Sales',
@@ -627,7 +627,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            250,
            'Retail Sales',
@@ -635,7 +635,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            260,
            'Recruiting',
@@ -643,7 +643,7 @@ VALUES (
            1700
        );
 
-INSERT IGNORE INTO departments
+INSERT IGNORE INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            270,
            'Payroll',
@@ -655,7 +655,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 COMMIT;
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'AD_PRES',
            'President',
@@ -663,7 +663,7 @@ VALUES (
            40000
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'AD_VP',
            'Administration Vice President',
@@ -671,7 +671,7 @@ VALUES (
            30000
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'AD_ASST',
            'Administration Assistant',
@@ -679,7 +679,7 @@ VALUES (
            6000
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'FI_MGR',
            'Finance Manager',
@@ -687,7 +687,7 @@ VALUES (
            16000
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'FI_ACCOUNT',
            'Accountant',
@@ -695,7 +695,7 @@ VALUES (
            9000
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'AC_MGR',
            'Accounting Manager',
@@ -703,7 +703,7 @@ VALUES (
            16000
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'AC_ACCOUNT',
            'Public Accountant',
@@ -711,7 +711,7 @@ VALUES (
            9000
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'SA_MAN',
            'Sales Manager',
@@ -719,7 +719,7 @@ VALUES (
            20000
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'SA_REP',
            'Sales Representative',
@@ -727,7 +727,7 @@ VALUES (
            12000
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'PU_MAN',
            'Purchasing Manager',
@@ -735,7 +735,7 @@ VALUES (
            15000
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'PU_CLERK',
            'Purchasing Clerk',
@@ -743,7 +743,7 @@ VALUES (
            5500
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'ST_MAN',
            'Stock Manager',
@@ -751,7 +751,7 @@ VALUES (
            8500
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'ST_CLERK',
            'Stock Clerk',
@@ -759,7 +759,7 @@ VALUES (
            5000
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'SH_CLERK',
            'Shipping Clerk',
@@ -767,7 +767,7 @@ VALUES (
            5500
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'IT_PROG',
            'Programmer',
@@ -775,7 +775,7 @@ VALUES (
            10000
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'MK_MAN',
            'Marketing Manager',
@@ -783,7 +783,7 @@ VALUES (
            15000
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'MK_REP',
            'Marketing Representative',
@@ -791,7 +791,7 @@ VALUES (
            9000
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'HR_REP',
            'Human Resources Representative',
@@ -799,7 +799,7 @@ VALUES (
            9000
        );
 
-INSERT IGNORE INTO jobs
+INSERT IGNORE INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'PR_REP',
            'Public Relations Representative',
